@@ -10,6 +10,6 @@ module "user" {
   tags = var.tags
   zone_name = var.zone_name
   app_alb_listener_arn = data.aws_ssm_parameter.app_alb_listener_arn.value
-  rule_priority = 20
+  rule_priority = 30
   app_version = var.app_version
 }
